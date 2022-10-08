@@ -1,3 +1,9 @@
+/* ---------------------- */
+
+head {
+    display: none;
+}
+
 * {
     display: block;
     box-sizing: border-box;
@@ -8,7 +14,7 @@
 
 }
 
-.wrapper {
+.wrapper{
     max-width: 1300px;
     margin: auto;
     /* background-color: rgb(151, 64, 64); */
@@ -17,20 +23,25 @@
 nav {
     color: whitesmoke;
     background-color: #000;
+    height: 90px;
 }
 
+
 h1 {
-    padding: 112 px 0 0 0;
-    font-size: 3rem;
+    padding: 100px 0 0 0;
+    font-size: 5.5rem;
+    font-weight: 400;
+    letter-spacing: -4px;
+    font-family: sans-serif;
 }
 
 .search {
     background-color: #dadbf1;
-    height: 200px;
+    height: 435px;
     text-align: center;
 }
 
-section>div {
+.category {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -40,24 +51,32 @@ section>div {
 
 }
 
-
-section>div>div {
-    width: 50%;
-    margin: 40px 0;
-    padding-right: 20px;
-    height: 70px;
+.category-list {width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-start;
 }
 
-section>div>div>p,
-h2,
-a {
+.category-list-block {
+    width: 80%;
+    margin: 0 0 70px ;
+    padding-right: 20px;
+    height: 70px;
     padding-left: 50px;
 }
 
-section>div>div>img {
-    float: left;
-    width: 70px;
+
+
+
+
+.category-list-icon {
+    display: inline-block;
+    max-width: 70px;
     margin-right: 20px;
+}
+
+.category-list-icon>img {
+    width: 70px;
 }
 
 
